@@ -17,7 +17,9 @@ class News {
         article_model articleModle = article_model(
             image: article['urlToImage'],
             title: article['title'],
-            description: article['description']);
+            description: article['description'],
+          url: article['url']
+        );
         article_list.add(articleModle);
       }
       return article_list;

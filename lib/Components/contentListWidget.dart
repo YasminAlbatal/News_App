@@ -36,14 +36,14 @@ class _contentListWidgetState extends State<contentListWidget> {
           } else if (snapshot.hasError) {
             return SliverToBoxAdapter(
                 child: SizedBox(
-                    height: 600,
+                    height: 700,
                     width: 200,
                     child: Center(
                         child: Text('oops there was an error, try later'))));
           } else {
             return SliverToBoxAdapter(
               child: SizedBox(
-                  height: 600,
+                  height: 700,
                   width: 200,
                   child: Center(child: CircularProgressIndicator())),
             );

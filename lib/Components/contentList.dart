@@ -17,7 +17,10 @@ class ContentList extends StatelessWidget {
               (context, index) => contentItem(
                   title1: article[index].title,
                   title2: article[index].description ?? '',
-                  image: article[index].image ??'https://cdn.pixabay.com/photo/2017/06/26/19/03/news-2444778_1280.jpg')
+                  image: article[index].image ??'https://cdn.pixabay.com/photo/2017/06/26/19/03/news-2444778_1280.jpg',
+                Url: article[index].url
+              )
+
             ),
           );
   }
